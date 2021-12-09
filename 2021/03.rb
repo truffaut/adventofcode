@@ -2,6 +2,7 @@ def part_1
   common = Array.new(12, 0)
 
   File.readlines("inputs/03").each do |binary_string|
+    # binary_string looks like "011001101001\n"
     binary_string.strip.each_char.with_index { |bit, i| bit == "0" ? common[i] -= 1 : common[i] += 1 }
   end
 

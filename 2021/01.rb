@@ -20,8 +20,8 @@ end
 puts "part 1 is equal to: #{part_1}"
 
 def part_2
-  count = 1
-  last_3 = [nil, nil, nil]
+  count = 0
+  last_3 = Array.new(3)
   last_sum = nil
   target = 0
   
@@ -53,7 +53,7 @@ def part_2
     target += 1
   end
 
-  count
+  count + 1
 end
 
 puts "part 2 is equal to: #{part_2}"
